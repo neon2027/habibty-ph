@@ -54,9 +54,9 @@ test('only admins can download sales reports', function () {
 
     $this->actingAs($admin)
         ->get(route('admin.reports.sales', ['format' => 'excel']))
-        ->assertDownload('habibtyph-sales-report.csv');
+        ->assertDownload('habibty-legazpi-ph-sales-report.csv');
 
     $this->actingAs($admin)
         ->get(route('admin.reports.sales', ['format' => 'pdf']))
-        ->assertDownload('habibtyph-sales-report.pdf');
+        ->assertDownload('habibty-legazpi-ph-sales-report.pdf');
 });

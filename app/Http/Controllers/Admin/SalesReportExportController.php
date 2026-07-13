@@ -28,13 +28,13 @@ class SalesReportExportController extends Controller
                 'rows' => $rows,
                 'generatedAt' => $generatedAt,
                 'totalCustomers' => $report->totalCustomers(),
-            ])->download('habibtyph-sales-report.pdf');
+            ])->download('habibty-legazpi-ph-sales-report.pdf');
         }
 
         return response()->streamDownload(function () use ($rows, $generatedAt, $report): void {
             $output = fopen('php://output', 'w');
 
-            fputcsv($output, ['HabibtyPH Legazpi Sales Report']);
+            fputcsv($output, ['Habibty Legazpi PH Sales Report']);
             fputcsv($output, ['Generated at', $generatedAt->format('Y-m-d H:i:s')]);
             fputcsv($output, ['Total registered customers', $report->totalCustomers()]);
             fputcsv($output, []);
@@ -51,9 +51,9 @@ class SalesReportExportController extends Controller
             }
 
             fclose($output);
-        }, 'habibtyph-sales-report.csv', [
+        }, 'habibty-legazpi-ph-sales-report.csv', [
             'Content-Type' => 'text/csv; charset=UTF-8',
-            'Content-Disposition' => 'attachment; filename="'.Str::slug('habibtyph sales report').'.csv"',
+            'Content-Disposition' => 'attachment; filename="'.Str::slug('habibty legazpi ph sales report').'.csv"',
         ]);
     }
 }

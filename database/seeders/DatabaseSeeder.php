@@ -35,7 +35,7 @@ class DatabaseSeeder extends Seeder
                 ['slug' => Str::slug($product['category'])],
                 [
                     'name' => $product['category'],
-                    'description' => "HabibtyPH {$product['category']} collection.",
+                    'description' => "Habibty {$product['category']} collection.",
                     'is_active' => true,
                 ],
             );

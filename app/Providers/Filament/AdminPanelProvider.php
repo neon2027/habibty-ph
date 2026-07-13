@@ -28,7 +28,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
-            ->brandName('HabibtyPH Legazpi')
+            ->brandName('Habibty Legazpi PH')
             ->colors([
                 'primary' => Color::Pink,
             ])
@@ -58,4 +58,3 @@ class AdminPanelProvider extends PanelProvider
             ]);
     }
 }
-
