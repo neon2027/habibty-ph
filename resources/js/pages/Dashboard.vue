@@ -69,7 +69,7 @@ const formatPeso = (amount: number) =>
                         Customer account
                     </p>
                     <h1 class="mt-4 text-3xl font-semibold text-stone-950">
-                        HabibtyPH Legazpi dashboard
+                        Habibty dashboard
                     </h1>
                     <p class="mt-2 max-w-2xl text-sm leading-6 text-stone-600">
                         Continue shopping and review your purchase history from

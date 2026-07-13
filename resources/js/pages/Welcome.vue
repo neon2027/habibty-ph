@@ -3,9 +3,9 @@ import { computed, ref } from 'vue';
 import { Head, Link, router } from '@inertiajs/vue3';
 import {
     ArrowRight,
-    Facebook,
-    Instagram,
+    Camera,
     LockKeyhole,
+    MessageCircle,
     ShoppingBag,
     Sparkles,
     Star,
@@ -86,7 +86,7 @@ const customerReviews = [
         location: 'Albay',
         product: 'Blush Gift Set',
         image: '/assets/reviews/review4.jpg',
-        quote: 'Bought this as a gift and it looked lovely. The pink theme fits HabibtyPH perfectly.',
+        quote: 'Bought this as a gift and it looked lovely. The pink theme fits Habibty perfectly.',
     },
     {
         name: 'Janelle P.',
@@ -126,12 +126,12 @@ const socialLinks = [
     {
         name: 'Instagram',
         href: 'https://www.instagram.com/habibtylegazpiph',
-        icon: Instagram,
+        icon: Camera,
     },
     {
         name: 'Facebook',
         href: 'https://www.facebook.com/profile.php?id=61585055453077',
-        icon: Facebook,
+        icon: MessageCircle,
     },
 ];
 const formatMoney = (amount: number) =>
@@ -158,7 +158,7 @@ const checkoutCart = () => {
 </script>
 
 <template>
-    <Head title="HabibtyPH Legazpi" />
+    <Head title="Habibty Legazpi PH" />
 
     <main class="min-h-screen bg-pink-50 text-stone-950">
         <header
@@ -174,9 +174,9 @@ const checkoutCart = () => {
                     /></span>
                     <span class="leading-tight"
                         ><span class="block text-base font-semibold"
-                            >HabibtyPH</span
+                            >Habibty</span
                         ><span class="block text-xs font-medium text-pink-600"
-                            >Legazpi</span
+                            >Legazpi PH</span
                         ></span
                     >
                 </Link>
@@ -249,13 +249,13 @@ const checkoutCart = () => {
                         <h1
                             class="font-serif text-4xl font-semibold tracking-normal text-stone-950 sm:text-5xl lg:text-6xl"
                         >
-                            Pink picks from HabibtyPH Legazpi
+                            Kikay on a budget? Say less, Habibty
                         </h1>
                         <p
                             class="mt-5 max-w-2xl text-base leading-7 text-stone-600 sm:text-lg"
                         >
-                            Browse store products, build a cart, and complete
-                            checkout from a signed-in customer account.
+                            Trendy and affordable | authentic. Pasabuy +
+                            beauty finds from Habibty Legazpi PH.
                         </p>
                     </div>
 
@@ -282,7 +282,7 @@ const checkoutCart = () => {
                     <figure class="group relative overflow-hidden rounded-lg">
                         <img
                             src="/assets/illustrations/banner1.jpg"
-                            alt="HabibtyPH Legazpi pink product banner"
+                            alt="Habibty Legazpi PH pink product banner"
                             class="aspect-[9/14] h-full w-full object-cover transition duration-500 ease-out group-hover:scale-110"
                         />
                         <figcaption
@@ -304,7 +304,7 @@ const checkoutCart = () => {
                     >
                         <img
                             src="/assets/illustrations/banner2.jpg"
-                            alt="HabibtyPH Legazpi featured shopping banner"
+                            alt="Habibty Legazpi PH featured shopping banner"
                             class="aspect-[9/14] h-full w-full object-cover transition duration-500 ease-out group-hover:scale-110"
                         />
                         <figcaption
@@ -337,7 +337,7 @@ const checkoutCart = () => {
                             Customer reviews
                         </p>
                         <h2 class="mt-3 text-2xl font-semibold text-stone-950">
-                            Loved by HabibtyPH buyers
+                            Loved by Habibty buyers
                         </h2>
                         <p
                             class="mt-2 max-w-2xl text-sm leading-6 text-stone-600"
@@ -637,10 +637,10 @@ const checkoutCart = () => {
                         /></span>
                         <span class="leading-tight">
                             <span class="block text-base font-semibold"
-                                >HabibtyPH</span
+                                >Habibty</span
                             >
                             <span class="block text-xs font-medium text-pink-600"
-                                >Legazpi</span
+                                >Legazpi PH</span
                             >
                         </span>
                     </Link>
@@ -667,10 +667,13 @@ const checkoutCart = () => {
                     class="flex flex-col gap-3 border-t border-pink-100 pt-5 text-sm text-stone-500 sm:flex-row sm:items-center sm:justify-between"
                 >
                     <p>
-                        &copy; {{ currentYear }} HabibtyPH Legazpi. All rights
+                        &copy; {{ currentYear }} Habibty Legazpi PH. All rights
                         reserved.
                     </p>
-                    <p>Pretty finds, easy browsing, and checkout after login.</p>
+                    <p>
+                        Kikay on a budget? Say less, Habibty. Trendy,
+                        affordable, and authentic beauty finds.
+                    </p>
                 </div>
             </div>
         </footer>

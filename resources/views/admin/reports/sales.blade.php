@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>HabibtyPH Legazpi Sales Report</title>
+    <title>Habibty Legazpi PH Sales Report</title>
     <style>
         body { font-family: DejaVu Sans, sans-serif; color: #1f2937; font-size: 12px; }
         h1 { color: #be185d; font-size: 22px; margin-bottom: 4px; }
@@ -15,7 +15,7 @@
     </style>
 </head>
 <body>
-    <h1>HabibtyPH Legazpi Sales Report</h1>
+    <h1>Habibty Legazpi PH Sales Report</h1>
     <div class="meta">Generated {{ $generatedAt->format('F d, Y h:i A') }}</div>
     <div class="total">Registered customers: {{ number_format($totalCustomers) }}</div>
 

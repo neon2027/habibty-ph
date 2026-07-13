@@ -7,8 +7,8 @@ use Illuminate\Console\Attributes\Description;
 use Illuminate\Console\Attributes\Signature;
 use Illuminate\Console\Command;
 
-#[Signature('habibtyph:admin {email : The email address of an existing user}')]
-#[Description('Grant Filament administrator access to an existing HabibtyPH user.')]
+#[Signature('habibty:admin {email : The email address of an existing user}')]
+#[Description('Grant Filament administrator access to an existing Habibty user.')]
 class GrantAdminAccess extends Command
 {
     /**
